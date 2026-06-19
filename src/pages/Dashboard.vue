@@ -32,8 +32,7 @@ onMounted(async () => {
         <div class="dashboard-content">
           <div class="progress-card">
             <div>
-              <h2>Todo Done</h2>
-              <p>keep it up</p>
+              <h2>ToDo Progress</h2>
             </div>
 
             <div class="progress-circle">
@@ -44,10 +43,6 @@ onMounted(async () => {
           <NewTask />
 
           <div class="task-list">
-            <p v-if="taskStore.tasks.length === 0" class="empty-text">
-              No tasks yet. Start small ✨
-            </p>
-
             <TaskItem
               v-for="task in taskStore.tasks"
               :key="task.id"

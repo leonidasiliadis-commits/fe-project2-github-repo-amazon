@@ -281,12 +281,20 @@ body,
   width: 112px;
   height: 112px;
   border-radius: 50%;
-  background: var(--orange);
-  color: #090909;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  color: #fff;
   font-size: 36px;
   font-weight: 900;
   display: grid;
   place-items: center;
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: -0.02em;
+}
+
+.progress-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(14, 165, 233, 0.4);
 }
 
 .new-task {
@@ -315,11 +323,27 @@ body,
   height: 48px;
   border: 0;
   border-radius: 50%;
-  background: var(--orange);
-  color: #050505;
-  font-size: 24px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  color: #fff;
+  font-size: 28px;
   font-weight: 900;
   cursor: pointer;
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.25);
+  transition: all 0.2s ease;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.new-task button:hover {
+  transform: translateY(-50%) scale(1.08);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+}
+
+.new-task button:active {
+  transform: translateY(-50%) scale(0.96);
 }
 
 .task-list {
